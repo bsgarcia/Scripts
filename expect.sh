@@ -10,7 +10,8 @@ send "/nick random\r"
 interact 
 echo done
 
-# However, I noticed that using expect alone makes the execution WAY quicker than using it with bash. 
+# However, I saw people complaining about the execution speed. Actually,
+# I noticed that using expect alone makes the execution WAY quicker than using it with bash. 
 # Indeed in the first case the delay between each request is 
 # by far shorter.
 
