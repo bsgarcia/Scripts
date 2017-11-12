@@ -1,0 +1,11 @@
+#!/usr/bin/bash
+# Used in order to visualize python pickle data in terminal
+# For linux users -> give execution rights to this scripts (chmod +x thescript)
+#                 -> then put it in your /usr/bin/ folder
+# Usage: $ pickle file.p
+
+python -c "import pickle
+try:
+    print(pickle.load(open('$1', 'rb')))
+except:
+    print('Specify a valid pickle file please.')"
