@@ -9,9 +9,9 @@ str='{"name":"'"$dir"'", "description":"Research project"}'
 msg=$(curl -u $username https://api.github.com/user/repos -d "$str")
 echo '*****************************************************'
 
-case "error" in
- *"$msg"*) echo 'SOMETHING WENT WRONG'
-esac
+#case "error" in
+# *"$msg"*) echo 'SOMETHING WENT WRONG'
+#esac
 
 echo 'CREATED SUCCESSFULLY'
 echo 'Init and push current repo (caution, all files are added)...'
